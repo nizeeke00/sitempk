@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/korzina.css">
+  <link rel="stylesheet" href="css/okno.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="bground">
+    <div class="block1">
+      <a href="index.html"><p class="bp1">О нас</p></a>
+      <a href="product.html"><p class="bp2">Продукция</p></a>
+        <a href="korzina.html"><p class="bp3">Каталог товаров</p></a>
+
+        <p class="bp5">Карьера</p>
+        <a href="about.html"> <p class="bp6">Контакты</p></a>
+        <img src="images/logo.png" alt="logo" width="22%" class="logo">
+    </div>
+
+
+
+    <div class="slideshow-container">
+        <div class="slide">
+          <img src="images/slider2.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+          <img src="images/slider1.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+          <img src="images/slider3.jpg" alt="Image 3">
+        </div>
+      </div>
+      
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <div class="dot" onclick="currentSlide(3)"></div>
+      </div>
+
+
+        <div class="cards">
+          <!-- Карточка товара -->
+          <div class="card">
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a href="#" class="card__image">
+                <img
+                  src="http://atyashevo.ru/wp-content/uploads/2022/08/%D0%94%D0%BE%D0%BA%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F-%D0%92%D0%A1-500.jpg"
+                  alt="Докторская высокий стандарт"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">-10%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <div class="card__price card__price--discount">750р/кг</div>
+                <div class="card__price card__price--common">825р/кг</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a href="#" class="card__title">
+                Докторская высокий стандарт
+              </a>
+              <!-- Кнопка добавить в корзину -->
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a href="#" class="card__image">
+                <img
+                  src="http://atyashevo.ru/wp-content/uploads/2022/07/%D0%A1%D0%9A-%D0%91%D1%80%D0%B0%D1%83%D0%BD%D1%88%D0%B2%D0%B5%D0%B9%D1%81%D0%BA%D0%B0%D1%8F.jpg"
+                  alt="Брауншвейгская"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">-10%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <div class="card__price card__price--discount">400/кг</div>
+                <div class="card__price card__price--common">440/кг</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a href="#" class="card__title">
+                Брауншвейгская <br>
+                <br>
+              </a>
+              <!-- Кнопка добавить в корзину -->
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a href="#" class="card__image">
+                <img
+                  src="http://atyashevo.ru/wp-content/uploads/2022/07/%D0%9A%D1%80%D0%B0%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%92%D0%A1-300-70%D1%8595-%D0%BC%D0%BC.jpg"
+                  alt="Краковская высокий стандарт"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">-10%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <div class="card__price card__price--discount">200/кг</div>
+                <div class="card__price card__price--common">220/кг</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a href="#" class="card__title">
+                Краковская высокий стандарт
+              </a>
+              <!-- Кнопка добавить в корзину -->
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a href="#" class="card__image">
+                <img
+                  src="http://atyashevo.ru/wp-content/uploads/2022/08/%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D0%BB%D0%B0%D1%82-%D0%B0%D0%B2%D1%81%D1%82%D1%80%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9.jpg"
+                  alt="Сервелат «Австрийский»"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">-10%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <div class="card__price card__price--discount">350/кг</div>
+                <div class="card__price card__price--common">385/кг</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a href="#" class="card__title">
+                Сервелат «Австрийский» <br>
+              </a>
+              <!-- Кнопка добавить в корзину -->
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a href="#" class="card__image">
+                <img
+                  src="http://atyashevo.ru/wp-content/uploads/2022/08/%D0%93%D1%80%D1%83%D0%B4%D0%B8%D0%BD%D0%BA%D0%B0-%D0%B8%D0%B7%D1%8B%D1%81%D0%BA%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F-300-%D0%BA%D0%BB%D0%B8%D1%88%D0%B5.jpg"
+                  alt="Грудинка «Изысканная»"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">-10%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <div class="card__price card__price--discount">775/кг</div>
+                <div class="card__price card__price--common">850/кг</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a href="#" class="card__title">    
+        Грудинка «Изысканная» <br>
+              </a>
+              <!-- Кнопка добавить в корзину -->
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a href="#" class="card__image">
+                <img
+                  src="http://atyashevo.ru/wp-content/uploads/2022/08/%D0%92%D0%B5%D1%82%D1%87%D0%B8%D0%BD%D0%B0-%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%BD%D0%B0%D1%8F-500.jpg"
+                  alt="Ветчина «Рубленая»"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">-10%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <div class="card__price card__price--discount">630/кг</div>
+                <div class="card__price card__price--common">693/кг</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a href="#" class="card__title">
+                Ветчина «Рубленая»  <br><br>
+              </a>
+              <!-- Кнопка добавить в корзину -->
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a href="#" class="card__image">
+                <img
+                  src="http://atyashevo.ru/wp-content/uploads/2022/07/%D0%A1%D0%BE%D1%81%D0%B8%D1%81%D0%BA%D0%B8-%D0%94%D0%BE%D0%BA%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5-1-%D0%BA%D0%B3.jpg"
+                  alt="Сосиски «Докторские» "
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">-10%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <div class="card__price card__price--discount">150/кг</div>
+                <div class="card__price card__price--common">165/кг</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a href="#" class="card__title">
+                Сосиски «Докторские»  <br><br>
+              </a>
+              <!-- Кнопка добавить в корзину -->
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <!-- Изображение-ссылка товара -->
+              <a href="#" class="card__image">
+                <img
+                  src="http://atyashevo.ru/wp-content/uploads/2020/01/%D0%90%D1%82%D1%8F%D1%88%D0%B5%D0%B2%D0%BE_%D0%9F%D0%B0%D1%88%D1%82%D0%B5%D1%82%D1%8B-%D0%B8-%D0%97%D0%B5%D0%BB%D1%8C%D1%86%D1%8B-%D0%9A%D0%BE%D0%BB%D0%B1%D0%B0%D1%81%D0%B0-%D0%9B%D0%B8%D0%B2%D0%B5%D1%80%D0%BD%D0%B0%D1%8F-%D0%9F%D0%B5%D1%87%D0%B5%D0%BD%D0%BE%D1%87%D0%BD%D0%B0%D1%8F-250%D0%B3-%D1%81%D1%80%D0%B5%D0%B7.jpg"
+                  alt="Колбаса ливерная «Печеночная»"
+                />
+              </a>
+              <!-- Скидка на товар -->
+              <div class="card__label">-10%</div>
+            </div>
+            <!-- Нижняя часть -->
+            <div class="card__bottom">
+              <!-- Цены на товар (с учетом скидки и без)-->
+              <div class="card__prices">
+                <div class="card__price card__price--discount">95/кг</div>
+                <div class="card__price card__price--common">104,5/кг</div>
+              </div>
+              <!-- Ссылка-название товара -->
+              <a href="#" class="card__title">
+                Колбаса ливерная «Печеночная»
+              </a>
+              <!-- Кнопка добавить в корзину -->
+              <button class="card__add">В корзину</button>
+            </div> 
+          </div>
+        </div>
+
+              </div>
+
+
+        
+
+
+            
+            
+            </div>
+  <!-- Сетка карточек товаров -->
+
+
+
+
+  <div class="niz"><div class="probel">
+  </div>
+      <p class="niz1">+7 8342 29-15-62 talina@atyashevo.ru</p>
+  </div>
+    
+
+  <script src="js/korzina.js"></script>
+  <script src="js/style.js"></script>
+</body>
+</html>
